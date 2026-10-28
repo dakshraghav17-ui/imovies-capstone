@@ -1,6 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
+import { Analytics } from '@vercel/analytics/react';
 
 import { AuthProvider }    from './context/AuthContext';
 import Navbar              from './components/Navbar';
@@ -48,6 +49,9 @@ function App() {
           hideProgressBar={false}
           theme="dark"
         />
+
+        {/* Vercel Web Analytics */}
+        <Analytics />
       </div>
     </AuthProvider>
   );
