@@ -1,0 +1,20 @@
+{
+  "name": "imovies-capstone",
+  "version": "1.0.0",
+  "private": true,
+  "description": "IMovies - Cinema Booking Platform",
+  "scripts": {
+    "build": "cd client && npm install && npm run build",
+    "start": "node server/server.js",
+    "server": "cd server && npm start",
+    "client": "cd client && npm run dev"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "uuid": "^9.0.0"
+  }
+}
